@@ -1,6 +1,5 @@
 // Karma configuration
 // Generated on Fri Nov 13 2015 15:37:13 GMT+0800 (马来西亚半岛标准时间)
-
 module.exports = function (config) {
     config.set({
 
@@ -15,10 +14,12 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
+            'bower_components/jquery/dist/jquery.js',
             'bower_components/angular/angular.js',
             'bower_components/angular-mocks/angular-mocks.js',
             'bower_components/angular-resource/angular-resource.js',
             'app/**/*.js',
+            'app/**/*.html',
             'test/**/*.js'
         ],
 
@@ -26,10 +27,21 @@ module.exports = function (config) {
         // list of files to exclude
         exclude: [],
 
+         //plugins: [
+         //    'karma-ng-html2js-preprocessor'
+         //],
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {},
+
+        preprocessors: {
+            'app/**/*.html':['ng-html2js']
+        },
+        ngHtml2JsPreprocessor:{
+            moduleName:'templates'
+        }
+        ,
+
 
 
         // test results reporter to use
