@@ -7,5 +7,6 @@
     <orderEntry type="library" name="jk" level="project" />
     <orderEntry type="library" name="node_modulessr" level="project" />
     <orderEntry type="library" name="Jasmine node_modules" level="project" />
+    <orderEntry type="library" name="karma" level="project" />
   </component>
 </module>

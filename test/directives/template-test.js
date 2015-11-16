@@ -28,4 +28,27 @@ describe('nsTextAndSub', function () {
     it('存在', function () {
        expect($el.length).toEqual(1);
     });
+
+    it('给scopeText赋值 在判断h3里面的text()是否与scopeText值相等', function () {
+        $scope.scopeText='moumoon';
+        $scope.$digest();
+        expect($el.find('h3').text()).toEqual('moumoon');
+    });
+
+    it('scopeSub 在判断h5里面的text()scopeSub', function () {
+        $scope.scopeSub='tang';
+        $scope.$digest();
+        expect($el.find('h5').text()).toEqual('tang');
+    });
+
+    it('h5默认隐藏', function () {
+        expect($el.find('h5').is(':visible')).toBeFalsy();
+    });
+
+    it('给h5 赋值  h5显示', function () {
+        $scope.scopeSub='moumoon';//
+        $scope.$digest();
+        expect($el.find('h5').is(':visible')).toBeTruthy();
+    });
+
 });

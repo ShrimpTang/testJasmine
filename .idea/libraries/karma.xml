@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="karma" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/karma" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/karma" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -9,7 +9,7 @@ describe('nsStateful', function () {
         $body = $('body'),
         simpleHtml = '<button ns-stateful="red"></button>';
     beforeEach(function () {
-        module('directives');
+        module('directives1');
         inject(function ($injector) {
             $rootScope = $injector.get('$rootScope');
             $scope = $rootScope.$new();

@@ -1,7 +1,7 @@
 /**
  * Created by ShrimpTang on 2015/11/15.
  */
-angular.module('directives',[])
+angular.module('directives1',[])
 .directive('nsStateful',
     function () {
         return{
